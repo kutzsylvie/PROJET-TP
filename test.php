@@ -1,19 +1,17 @@
 <?php
 require_once 'PDO.php';
-require_once 'config.php';
-include 'header.php';
-?>
+include 'pages/Commons/header.php';
 
-<?php
 $db = connectDb();
-$stmt = $db->prepare('SELECT * FROM `GRAINES`');
-$stmt ->execute();
-$resultats = $stmt->fetchAll(PDO::FETCH_ASSOC);
-$stmt ->closeCursor();
-
-echo'<pre>';
-print_r($resultats);
+$stmt = $db->prepare('SELECT * FROM `products`');
+$stmt->execute();
+$product = $stmt->fetchAll(PDO::FETCH_ASSOC);
+$stmt->closeCursor();
 ?>
-<div class='border'>
-  <?php include 'footer.php'; ?>
-</div>
+<!-- Section: Content-->
+<?php foreach ($product as $products){
+  echo $products['item'];
+  // code...
+}
+?>
+
