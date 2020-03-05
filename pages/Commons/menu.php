@@ -1,14 +1,13 @@
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg  w-100 d-flex justify-contend-around">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon btn btn-secondary"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent w-100 d-flex justify-contend-around">
-                
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">  
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"> Marques du magasin</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <div class="container">
+                            <div class="container w-100 d-flex justify-contend-around">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <ul class="nav flex-column">
@@ -122,8 +121,15 @@
                     <div>
                     <li class="nav-item">
                         <a class="nav-link" href="../Contact/contact.php">Contact</a>
-                    </li>
+                    </li>                
             </div>
-            
-          </div >
+            </div>
+            <div>
+             <form class="form-inline">
+	                     <input class="form-control ml-5-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+                             <div>
+	                     <button class="btn btn-outline-secondary ml-2" type="submit">Valider</button>
+                             </div>
+	                  </form>
+            </div>
         </nav>
