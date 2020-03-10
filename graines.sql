@@ -72,7 +72,6 @@ CREATE TABLE `users`(
         `password`  Varchar (50) NOT NULL ,
         `id_role`   Int NOT NULL
         ,CONSTRAINT UK_user UNIQUE (email)
-        ,CONSTRAINT UK_user UNIQUE (email)
 	,CONSTRAINT PK_users PRIMARY KEY (`id`)
 
 	,CONSTRAINT FK_users_role FOREIGN KEY (`id_role`) REFERENCES role(`id`)

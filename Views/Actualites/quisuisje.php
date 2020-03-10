@@ -1,5 +1,5 @@
 <?php
-include '../Commons/header.php';
+include '../../Views//header.php';
 ?>
 <div class="container z-depth-1 py-5 my-5">
   <section class="mx-md-5 text-center text-lg-left">
@@ -25,5 +25,5 @@ include '../Commons/header.php';
 </div>
 	<!-- End Contact -->
   <div class='border p-1 mt-5'>
-    <?php include '../Commons/footer.php'; ?>
+  <?php include '../../Views/footer.php'; ?>
   </div>

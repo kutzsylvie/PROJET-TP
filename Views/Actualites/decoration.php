@@ -1,5 +1,5 @@
 <?php
-include '../Commons/header.php';
+include '../../Views/header.php';
 ?>
 <!--Section: Content-->
 <section class="text-center dark-grey-text mb-5">
@@ -157,5 +157,5 @@ include '../Commons/header.php';
   </section>
   <!-- End Events -->
   <div class='border p-1 mt-5'>
-    <?php include '../Commons/footer.php'; ?>
+    <?php include '/footer.php'; ?>
   </div>

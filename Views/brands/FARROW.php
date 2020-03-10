@@ -1,5 +1,5 @@
 <?php
-include '../Commons/header.php';
+include '../../Views/header.php';
 ?>
 <h1 class='text-center mt-5'>FARROW & BALL</h1>
 <div class="row no-gutters">
@@ -34,7 +34,7 @@ include '../Commons/header.php';
     </div>
 </div>
 <div class='border p-1 mt-5'>
-    <?php include '../Commons/footer.php'; ?>
+    <?php include '../../Views/footer.php'; ?>
 </div>
 
 <!-- End Contact -->

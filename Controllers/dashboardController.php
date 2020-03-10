@@ -5,4 +5,4 @@ if(!isset($_SESSION['auth']['login'])){
     exit();
 }
 
-require_once ROOT . '/Views/dashboard.php';
+require_once  '/Views/dashboard.php';

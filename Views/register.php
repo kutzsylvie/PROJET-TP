@@ -1,7 +1,17 @@
 <?php
-    require_once '/Views/header.php';
-    require_once '/Views/nav.php';
+    require_once '../Views/header.php';
+    require_once '../Views/nav.php';
 ?>
+<!--Alert creation compte réussi -->
+<?php if (isset($success)){ ?>
+<div class="container">
+    <div class="row">
+        <div class="form col-6 offset-3">
+            <p class="alert alert-success text-center">Le compte a bien été créer !<br>Vous pouvez maintenant vous connecter avec vos identifiants</p>
+        </div>
+    </div>
+</div>
+<?php } else { ?>
 <!-- Start Contact -->
 <div id="contact" class="contact-box">
 <div class="container">
@@ -13,14 +23,7 @@
             <div class="card-header .z-depth-4 info-color">
                 <h1 class="text-center font-weight-bold text-white">Inscription</h1>
             </div>
-            <form class="card-body" method="POST" action="" novalidate="">
-                <div class="form-group md-form">
-                    <label for="firstname">Prénom : </label>
-                    <input  autocomplete="false" name="firstname" type="text" class="form-control <?= (isset($isSubmit) && !isset($errors['firstname'])) ? 'is-valid' : '' ?> <?= (isset($isSubmit) && isset($errors['firstname'])) ? 'is-invalid' : '' ?>" id="firstname" required>
-                    <div class="invalid-feedback">
-                    <?= $errors['firstname'] ?? '' ?>.
-                    </div>
-                </div>
+            <form class="card-body" method="POST" action="" novalidate="">             
                 <div class="form-group md-form">
                     <label for="lastname">Nom : </label>
                     <input  autocomplete="false" name="lastname" type="text" class="form-control <?= (isset($isSubmit) && !isset($errors['lastname'])) ? 'is-valid' : '' ?> <?= (isset($isSubmit) && isset($errors['lastname'])) ? 'is-invalid' : '' ?>" id="lastname" required>
@@ -29,10 +32,24 @@
                     </div>
                 </div>
                 <div class="form-group md-form">
-                    <label for="emailRegister">Email : </label>
-                    <input  autocomplete="false" name="email" type="text" class="form-control <?= (isset($isSubmit) && !isset($errors['email'])) ? 'is-valid' : '' ?> <?= (isset($isSubmit) && isset($errors['email'])) ? 'is-invalid' : '' ?>" id="emailRegister" required>
+                    <label for="firstname">Prénom : </label>
+                    <input  autocomplete="false" name="firstname" type="text" class="form-control <?= (isset($isSubmit) && !isset($errors['firstname'])) ? 'is-valid' : '' ?> <?= (isset($isSubmit) && isset($errors['firstname'])) ? 'is-invalid' : '' ?>" id="firstname" required>
+                    <div class="invalid-feedback">
+                    <?= $errors['firstname'] ?? '' ?>.
+                    </div>
+                </div>
+                <div class="form-group md-form">
+                    <label for="email">Email : </label>
+                    <input  autocomplete="false" name="email" type="text" class="form-control <?= (isset($isSubmit) && !isset($errors['email'])) ? 'is-valid' : '' ?> <?= (isset($isSubmit) && isset($errors['email'])) ? 'is-invalid' : '' ?>" id="email" required>
                     <div class="invalid-feedback">
                         <?= $errors['email'] ?? '' ?>
+                    </div>
+                </div>
+                <div class="form-group md-form">
+                    <label for="phone">Téléphone : </label>
+                    <input  autocomplete="false" name="phone" type="text" class="form-control <?= (isset($isSubmit) && !isset($errors['phone'])) ? 'is-valid' : '' ?> <?= (isset($isSubmit) && isset($errors['phone'])) ? 'is-invalid' : '' ?>" id="phone" required>
+                    <div class="invalid-feedback">
+                        <?= $errors['phone'] ?? '' ?>
                     </div>
                 </div>
                 <div class="form md-form">
@@ -68,15 +85,15 @@
                 <button class="btn btn-info btn-rounded" type="submit">S'inscrire</button>
                 <div class="col-md-4">
                     <div class="form-group row no-gutters align-items-center text-danger font-weight-bold ml-5 mt-5">
-                        <label for="captcha" class="col-auto pr-3">Captcha : Combien font 3+5 :</label>
-                        <input type="number" name="captcha" id="captcha" class="form-control col font-weight-bold" required/>
+                        <!-- <label for="captcha" class="col-auto pr-3">Captcha : Combien font 3+5 :</label>
+                        <input type="number" name="captcha" id="captcha" class="form-control col font-weight-bold" required/> -->
                     </div>
                 </div>
-                <input type="submit" class="btn btn-dark font-weight-bold mb-5 mx-auto d-block" value="Valider" />
+                <!-- <input type="submit" class="btn btn-dark font-weight-bold mb-5 mx-auto d-block" value="Valider" /> -->
             </form>
         </div>
     </div>
 </div>
+<?php }
 
-<?php
-require_once '/Views/footer.php';
+require_once '../Views/footer.php';?>

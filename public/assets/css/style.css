@@ -18,7 +18,7 @@ html, body {
 }
 body, p {
     color: black;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-family: 'Poiret One', cursive;
     line-height: 1.80857;
 }
@@ -38,25 +38,25 @@ h6 {
     margin: 0
 }
 h1 {
-    font-size: 2.5rem;
+    font-size: 3rem;
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-size: 2.25rem;
 }
 
 h3 {
-    font-size: 1.50rem;
+    font-size: 2rem;
 }
 
 h4 {
-    font-size: 1.25rem;
+    font-size: 1.75rem;
 }
 h5 {
-    font-size: 1rem;
+    font-size: 1.50rem;
 }
 h6 {
-    font-size:0.5rem;
+    font-size:1rem;
 }
 a,
 .btn {
@@ -284,8 +284,7 @@ height:400px;
         grid-row: 3 / 3;
       }
 
-      .item a {
-        position: absolute;
+      .item a {<ion: absolute;
         left: 0;
         right: 0;
         bottom: 0;
@@ -308,6 +307,7 @@ height:400px;
 }
 /* footer*/
 footer h4{
+font-size:1<frem;
   color: white;
   font-family: 'Poiret One', cursive;
 }
@@ -315,7 +315,7 @@ footer h4{
   background-color: #414141;
 }
 /* mentions légales  */
-.mentions ,h2, h3{
+.mentions h2 h3{
   font-size:1rem;
   font-family: 'Poiret One', cursive;
 }

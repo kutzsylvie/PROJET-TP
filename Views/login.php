@@ -1,6 +1,6 @@
 <?php
-require_once ROOT . '/Views/header.php';
-require_once ROOT . '/Views/nav.php';
+require_once  '/Views/header.php';
+require_once  '/Views/nav.php';
 ?>
 <div class="container">
     <div class="row justify-content-center">
@@ -25,4 +25,4 @@ require_once ROOT . '/Views/nav.php';
 </div>
 
 <?php
-require_once ROOT . '/Views/footer.php';
+require_once '/Views/footer.php';

@@ -1,5 +1,5 @@
 <?php
-include '../Commons/header.php';
+include '../../Views//header.php';
 ?>
 <div class="container my-5">
 
@@ -235,5 +235,5 @@ include '../Commons/header.php';
 </div>
 	<!-- End Contact -->
   <div class='border p-1 mt-5'>
-    <?php include '../Commons/footer.php'; ?>
+  <?php include '../../Views/footer.php'; ?>
   </div>

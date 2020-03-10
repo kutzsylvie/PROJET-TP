@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+require_once  '/Views/header.php';
 ?>
 <div class=" mentions container my-5">
 <h1 class ="mb-5">Mentions légales<h1>
@@ -109,5 +109,5 @@ Sous Chrome : Cliquez en haut à droite du navigateur sur le pictogramme de menu
 </div>
 	<!-- End Contact -->
 	<?php
-	include 'footer.php';
+	include '/Views/footer.php';
 	?>

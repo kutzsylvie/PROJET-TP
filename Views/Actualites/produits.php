@@ -1,6 +1,6 @@
 <?php
 require_once '../../PDO.php';
-include '../Commons/header.php';
+include '../../Views/header.php';
 ?>
 <!-- se connecter à la base de données -->
 <?php

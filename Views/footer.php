@@ -14,7 +14,7 @@
         <h4 class="ont-weight-bold text-uppercase mb-4">Qui suis-je ?</h4>
         <!--Image-->
         <div class="view overlay z-depth-1-half">
-          <a href="quisuisje.php"><img src="../sources/img/photosandie.jpg" class="img-fluid" style="width: 30%"   alt="photo sandie"></a>
+          <a href="quisuisje.php"><img src="../public/assets/img/photosandie.jpg" class="img-fluid" style="width: 30%"   alt="photo sandie"></a>
 
           <a href="">
             <div class="mask rgba-white-light"></div>
@@ -91,18 +91,19 @@
           <!--End Footer-->
 
           <!-- ALL JS FILES -->
-          <script src="../../js/jquery.min.js"></script>
-          <script src="../../js/popper.min.js"></script>
-          <script src="../../js/bootstrap.min.js"></script>
+          <script src="../public/assets/js/jquery.min.js"></script>
+          <script src="../public/assets/js/popper.min.js"></script>
+          <script src="../public/assets/js/bootstrap.min.js"></script>
           <!-- ALL PLUGINS -->
-          <script src="../../js/jquery.magnific-popup.min.js"></script>
+          <script src="https://kit.fontawesome.com/0783993408.js" crossorigin="anonymous"></script>
+          <script src="../public/assets/js/jquery.magnific-popup.min.js"></script>
           <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-          <script src="../../js/jquery.pogo-slider.min.js"></script>
-          <script src="../../js/slider-index.js"></script>
-          <script src="../../js/smoothscroll.js"></script>
-          <script src="../../js/form-validator.min.js"></script>
-          <script src="../../js/contact-form-script.js"></script>
-          <script src="../../js/carouseldeco.js"></script>
+          <script src="../public/assets/js/jquery.pogo-slider.min.js"></script>
+          <script src="../public/assets/js/slider-index.js"></script>
+          <script src="../public/assets/js/smoothscroll.js"></script>
+          <script src="../public/assets/js/form-validator.min.js"></script>
+          <script src="../public/assets/js/contact-form-script.js"></script>
+          <script src="../public/assets/js/carouseldeco.js"></script>
 
         </body>
         </html>

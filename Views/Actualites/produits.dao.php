@@ -1,6 +1,6 @@
 <?php
-require_once '../../PDO.php';
-include '../Commons/header.php';
+require_once '../../Views/PDO.php';
+include '../../Views/header.php';
 function getProductsFromStatus($idstatus)
 {
   $db = connectDb();

@@ -1,8 +1,7 @@
 <?php
-include '../Commons/header.php';
+include '/Views/header.php';
 ?>
 <div class="container my-5">
-
 
   <!--Section: Content-->
   <section class="dark-grey-text border-none text-center">
@@ -794,5 +793,5 @@ include '../Commons/header.php';
 
 </div>
 <div class='border p-1 mt-5'>
-  <?php include '../Commons/footer.php'; ?>
+  <?php include '../../Views/footer.php'; ?>
 </div>
