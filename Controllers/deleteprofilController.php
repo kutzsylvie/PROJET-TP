@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once '../Models/User.php';
-require_once '../Models/Database.php';
+require_once '../Models/DataBase.php';
 $users = new users();
 
 $users->id = $_SESSION['auth']['id'];
@@ -18,7 +18,7 @@ $users->id = $_SESSION['auth']['id'];
  
   $sleep = 4;
   session_destroy();
-  header('Refresh:' . $sleep . ';http://'.$_SERVER['HTTP_HOST'].'/Controllers/connexionController.php');
+  header('Refresh:' . $sleep . ';http://'.$_SERVER['HTTP_HOST'].'/Controllers/accueilController.php');
 
 
 //chargement du front

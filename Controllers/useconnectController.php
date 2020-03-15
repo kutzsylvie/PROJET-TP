@@ -2,7 +2,7 @@
 session_start();
 require_once '../Models/User.php';
 require_once '../Models/Database.php';
-
+// verifie la cohérence du mail et du mot de passe
 $email = $password = '';
 $errors = [];
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -26,7 +26,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                         $_SESSION['auth']['id'] = $user->id;
                         $_SESSION['auth']['lastname'] = $user->lastname;
                         $_SESSION['auth']['firstname'] = $user->firstname;
-                        header('Location:../Controllers/indexController.php');
+                        header('Location:../Views/index.php');
                         exit();
                     } else {
                         $errors['login'] = 'l\'identifiant ou le mot de passe est incorrect !';

@@ -18,7 +18,7 @@ $users->id = $_SESSION['auth']['id'];
  
   $sleep = 4;
   session_destroy();
-  header('Refresh:' . $sleep . ';http://'.$_SERVER['HTTP_HOST'].'/Controllers/connexionController.php');
+  header('Refresh:' . $sleep . ';http://'.$_SERVER['HTTP_HOST'].'/Controllers/accueilController.php');
 
 
 //chargement du front

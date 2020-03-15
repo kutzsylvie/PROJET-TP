@@ -1,3 +1,6 @@
+<?php
+ require_once '../Views/header.php';
+?>
 <div class="container-connect">
     <!--Formulaire d'inscription-->
     <div class="row ">
@@ -21,3 +24,6 @@
                 <button type="submit" class="col-8 offset-2 btn bg-success mt-2"> Se connecter</button>
                 <a class="btn btn-warning col-8 offset-2" href="../Controllers/registerController.php"> Ou inscris-toi !</a>
             </div>
+            <?php
+ require_once '../Views/footer.php';
+?>

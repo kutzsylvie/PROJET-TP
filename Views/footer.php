@@ -14,7 +14,7 @@
         <h4 class="ont-weight-bold text-uppercase mb-4">Qui suis-je ?</h4>
         <!--Image-->
         <div class="view overlay z-depth-1-half">
-          <a href="quisuisje.php"><img src="../public/assets/img/photosandie.jpg" class="img-fluid" style="width: 30%"   alt="photo sandie"></a>
+          <a href="../Views/Actualites/quisuisje.php"><img src="../public/assets/img/photosandie.jpg" class="img-fluid" style="width: 30%"   alt="photo sandie"></a>
 
           <a href="">
             <div class="mask rgba-white-light"></div>
@@ -32,7 +32,7 @@
         <ul class="list-unstyled">
           <li><p class="text-white"><a href="leblog.php">Le Blog</a></p></li>
             <li><p class="text-white"><a href="leblog.php">Prendre un rendez-vous</a></p></li>
-          <li><p><a href="mentionslégales.php">Mentions légales</a></p></li>
+          <li><p><a href="../Views/mentionslégales.php">Mentions légales</a></p></li>
           <li><p><a href="#!"></a></p></li>
           <li><p><a href="#!"></a></p></li>
         </ul>

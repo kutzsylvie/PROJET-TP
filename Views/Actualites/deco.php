@@ -113,7 +113,7 @@ include '../../Views/header.php';
 <!--Section: Content-->
 <div class="row justify-content-center mt-5">
   <div class="col-12 col-lg-3 text-center">
-    <a href="contact.php"><button type="button" class="btn btn-primary justify-content-center">Prendre un rendez-vous !</button>
+    <a href="../../../Controllers/registerController.php"><button type="button" class="btn btn-primary justify-content-center">Prendre un rendez-vous !</button>
     </div>
   </div>
   <h1 class='text-center mt-5'>
@@ -157,5 +157,5 @@ include '../../Views/header.php';
   </section>
   <!-- End Events -->
   <div class='border p-1 mt-5'>
-    <?php include '/footer.php'; ?>
+    <?php include '../../Views/footer.php'; ?>
   </div>

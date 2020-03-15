@@ -2,6 +2,7 @@
 session_start();
 require_once '../Models/User.php';
 require_once '../Models/Database.php';
+// Contrôleur  affichage du profil
 // si aucune variable de session n'existe, on renvoi vers la page pour se logguer
 if (!isset($_SESSION['auth']['id'])){
     header('Location: http://'.$_SERVER['HTTP_HOST'].'/Controllers/registerController.php');
@@ -10,12 +11,12 @@ if (!isset($_SESSION['auth']['id'])){
 $errors = [];
 $nameRegex = '/\w+/';
 //creation de l'objet user
-    $user = new user();
+    $user = new User();
 // recuperation du profil en cours grace à l'id
-    $users->id= $_SESSION['auth']['id'];
-    $users->getOne();
+    $user->id= $_SESSION['auth']['id'];
+    $user->getOne();
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    //variables de formulaires disponnibles
+    //variables de formulaires disponibles
     $isSubmit = true;
     // recupération du nom, on indique si format incorrecte
     $firstname = trim(filter_input(INPUT_POST, 'firstname', FILTER_SANITIZE_STRING));
@@ -27,7 +28,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             if (empty($lastname) || !preg_match($nameRegex, $lastname)) {
                 $errors['lastname'] = 'Le nom est invalide !';
             }
-
     // recuperation du mail, on indique si format incorrecte
     $email = trim(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING));     
     if (empty($email) || !filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL)) {
@@ -58,7 +58,5 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 else{
     
 }
-//chargement du front
 require_once '../Views/profil.php';
-
 ?>

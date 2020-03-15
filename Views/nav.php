@@ -1,18 +1,21 @@
-        <nav class="navbar navbar-expand-lg  w-100 d-flex justify-contend-around">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+<nav class="navbar navbar-expand-lg ">
+<div class="col-2">
+                        <a href="/Controllers/accueilController.php"><img src="/public/assets/img/Logo/logo_original.jpg" alt="logo" class="rounded-circle img-fluid logosize"/></a>
+                    </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
                 <span class="navbar-toggler-icon btn btn-secondary"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+            <div class="collapse navbar-collapse w-100 d-flex justify-contend-between" id="navbarSupportedContent">
+                <ul class="navbar-nav ">
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="" id="navbarDropdown" role="button"> Marques du magasin</a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <div class="container w-100 d-flex justify-contend-around">
+                        <div class="dropdown-menu mt-5" aria-labelledby="navbarDropdown">
+                            <div class="container">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <ul class="nav flex-column">
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="../../brands/FARROW.php">FARROW & BALL</a>
+                                                <a class="nav-link active" href="brands/FARROW.php">FARROW & BALL</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" href="brands/COLE & SON.php">Cole & Son</a>
@@ -123,14 +126,12 @@
                         <a class="nav-link" href="register.php">Contact</a>
                     </li>
             </div>
-            </div>
-            <div>
-             <form class="form-inline">
+            <form class="form-inline">
              <?php if (!isset($_SESSION['auth']['login'])) { ?>
                 <a class="btn btn-danger mr-2" href="../Controllers/useconnectController.php" title="connectes-toi !">
                     <i class="fa fa-user" aria-hidden="true"></i> Connectes-toi !</a>
             <?php } else { ?>
-                <a  href="../Controllers/profilController.php" class="btn btn-primary mr-1">Bonjour <?= ucfirst(strip_tags($_SESSION['auth']['lastname'])) ?> </a>
+                <a  href="../Controllers/profilController.php" class="btn btn-secondary bonjour text-white font-weight-bold display-4 mr-1">Bonjour <?= ucfirst(strip_tags($_SESSION['auth']['lastname'])) ?> </a>
                 <a href="../Controllers/logoutController.php" class="btn btn-secondary mr-1"><i class="fas fa-sign-out-alt">Déconnexion</i></a>
             <?php } ?>
 	                     <input class="form-control ml-5-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
@@ -138,5 +139,9 @@
 	                     <button class="btn btn-outline-secondary ml-2" type="submit">Valider</button>
                              </div>
 	                  </form>
+            </div>
+            <div>
+             
+            </div>
             </div>
         </nav>

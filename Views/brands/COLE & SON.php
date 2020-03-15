@@ -4,7 +4,7 @@ include '../../Views/header.php';
 <h1 class='text-center mt-5'>Cole & Son</h1>
 <div class="row no-gutters">
     <div class="card col-auto mx-auto mt-5" style="width:50rem;">
-        <img src="../sources/img/MARQUES/colebotanica.jpg" width="10px" class="cardbrand-img-top p-1" alt="image FARROW">
+        <img src="../public/img/MARQUES/colebotanica.jpg" width="10px" class="cardbrand-img-top p-1" alt="image COLE & SON">
         <div class="card-body text-center">
 <!--            <h1 class="card-title">Cole & Son</h1>-->
             <h2 class="card-text">Papiers peints</h2>

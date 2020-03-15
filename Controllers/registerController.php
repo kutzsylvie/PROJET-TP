@@ -1,12 +1,15 @@
 <?php
+session_start();
 require_once  '../Models/Database.php';
 require_once '../Models/User.php';
+// registration checker
  $lastname =$firstname = $email  = $phone = $password = $id_role = '';
 $errors = [];
 $nameRegex = '/\w+/';
 $passwordRegex = '/^(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])?[\w!@#$%^&*]{8,}$/';
 $regexDate = "/^((?:19|20)[0-9]{2})-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])$/";
-$regexTel = "/^0[67](\.[0-9]{2}){4}$/";
+$regexTel = "/^0[0-9](\.[0-9]{2}){4}$/";
+
 if(isset($_POST['checkmail'])){
      $email = trim(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING));
     if (filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL)) {
@@ -41,7 +44,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     if (empty($email) || !filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL)) {
         $errors['email'] = 'Le mail est invalide !';
     }
-   
+    $user = new User();
+    $user->email = $email;
+    $exist_user = $user->checkEmail();
+    if ($exist_user == true) {
+    $errors['email'] = 'Ce mail existe déjà !';
+   }
     //verif champ mobile
     $phone = trim(htmlspecialchars($_POST['phone']));
     if (empty($phone)) {
@@ -63,8 +71,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $errors['terms'] = 'Veuillez accepter les conditions d\'utilisation !';
     }
 
+    $message = trim(filter_input(INPUT_POST, 'message', FILTER_SANITIZE_STRING));
+    if (empty($message)) {
+        $errors['message'] = 'Le prénom est invalide !';
+    }
+
+    if (isset($_POST['newsletter'])) {
+        $newsletter=1;
+    }
+    else {
+        $newsletter=0;
+    }
+
     if (count($errors) == 0) {
-        $user = new User( $lastname, $firstname, $email,$phone, password_hash($password, PASSWORD_BCRYPT));
+        $user = new User( $lastname, $firstname, $email,$phone, password_hash($password, PASSWORD_BCRYPT), $message, $newsletter);
         try {
             $user->create();
             $success = true;

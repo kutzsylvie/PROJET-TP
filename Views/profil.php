@@ -1,6 +1,5 @@
 <?php
-require_once '../Views/home/header.php';
-
+require_once '../Views/header.php';
 if (isset($success)) {
     // message de confirmation et on informe à l'utilisateur qui va être déconnecté
     ?>
@@ -25,25 +24,43 @@ else{
                 <div class="card-body ">
                     <form method="post" action="#">
                         <div class="row">
-                        <p class="col-12">En cas de modification, une reconnexion sera necessaire pour valider vos paramètres.</p>
+                            <p class="col-12">En cas de modification, une reconnexion sera necessaire pour valider vos
+                                paramètres.</p>
                             <div class="form-group col-6">
                                 <label for="lastName">Nom</label>
                                 <input name="lastname" type="text" id="lastName" class="form-control" placeholder=""
-                                    value="<?= $users->lastname ?>">
+                                    value="<?= $user->firstname ?>">
                                 <span class="invalid-feedback d-block"><?= ($errors['lastname']) ?? '' ?></span>
                             </div>
                             <div class="form-group col-6">
                                 <label for="firstName">Prénom</label>
                                 <input name="firstname" type="text" id="firstName" class="form-control" placeholder=""
-                                    value="<?= $users->firstname ?>">
+                                    value="<?= $user->lastname ?>">
                                 <span class="invalid-feedback  d-block"><?= ($errors['firstname']) ?? '' ?></span>
                             </div>
                             <div class="form-group col-12">
                                 <label for="email"> Mail:</label>
-                                <input type="email" id="mail" name="email" value="<?= $users->email ?>"
+                                <input type="email" id="mail" name="email" value="<?= $user->email ?>"
                                     class="form-control">
                                 <div class="invalid-feedback  d-block">
                                     <?= $errors['email'] ?? '' ?>.
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input name="newsletter"
+                                        class="form-check-input"
+                                        type="checkbox" value="1" id="newsletter"
+                                        <?php
+                                        if($user->newsletter == 1){
+                                            echo 'checked';
+                                        }
+                                        ?>
+                                        >
+                                    <label class="form-check-label" for="newsletter">Newsletter</label>
+                                </div>
+                                <div class="invalid-feedback mt-3 ml-0">
+                                    <?= $errors['newsletter'] ?? '' ?>.
                                 </div>
                             </div>
                             <div class="btn-group col-12" role="group" aria-label="Basic example">
@@ -74,11 +91,11 @@ else{
                     </button>
                 </div>
                 <div class="modal-body">
-                  <p>Etes vous sur de vouloir supprimer votre profil ? <br> Cette action est irreversible !</p>  
+                    <p>Etes vous sur de vouloir supprimer votre profil ? <br> Cette action est irreversible !</p>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuler</button>
-                    <a href="../Controllers/deleteprofilController.php"  class="btn btn-primary">Supprimer</a>
+                    <a href="../Controllers/deleteprofilController.php" class="btn btn-primary">Supprimer</a>
                 </div>
             </div>
         </div>
@@ -86,6 +103,7 @@ else{
 </div>
 <?php
 }
-require_once '../Views/includes/footer.php';
 
 ?>
+<?php
+require_once '../Views/footer.php';

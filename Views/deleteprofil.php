@@ -1,6 +1,6 @@
 <?php
-require_once '../Views/home/header.php';
-require_once '../Views/home/nav.php';
+require_once '../Views/header.php';
+require_once '../Views/nav.php';
 if ($_SESSION['deleteUser']['success']){
    ?>
 <div class="container">
@@ -28,4 +28,5 @@ else{
 
 }
 
-require_once '
+require_once '../Views/footer.php';
+?>

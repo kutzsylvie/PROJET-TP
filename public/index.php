@@ -20,7 +20,9 @@
         <div class="container-fluid p-0 mt-2">
             <header class=" sticky-top data-spy=scroll id= home data-target= #navbar-wd  data-offset= 98">
                 <div>
-                    
+                    <div class="col-2">
+                        <a href="/Controllers/accueilController.php"><img src="/public/assets/img/Logo/logo_original.jpg" alt="logo" class="rounded-circle img-fluid logosize"/></a>
+                    </div>
                     <div>
                         <?php include 'nav.php' ?>
                     </div>

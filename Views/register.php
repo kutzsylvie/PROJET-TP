@@ -1,7 +1,10 @@
 <?php
     require_once '../Views/header.php';
     require_once '../Views/nav.php';
+   
 ?>
+<!-- Registration form -->
+
 <!--Alert creation compte réussi -->
 <?php if (isset($success)){ ?>
 <div class="container">
@@ -72,11 +75,21 @@
                         <textarea class="form-control placeholder" id="message"  name="message"placeholder="Votre Message" rows="8" data-error="Ecrivez votre message" required></textarea>
                         <div class="help-block with-errors"></div>
                     </div>
+                    <div class="form-group">
+                    <div class="form-check">
+                        <input name="newsletter" class="form-check-input <?= (isset($isSubmit) && !isset($errors['newsletter'])) ? 'is-valid' : '' ?> <?= (isset($isSubmit) && isset($errors['newsletter'])) ? 'is-invalid' : '' ?>" type="checkbox" value="1" id="newsletter"
+                            required>
+                        <label class="form-check-label" for="newsletter">Newsletter</label>
+                    </div>
+                    <div class="invalid-feedback mt-3 ml-0">
+                    <?= $errors['newsletter'] ?? '' ?>.
+                    </div>
+                </div>
                 <div class="form-group">
                     <div class="form-check">
                         <input name="terms" class="form-check-input <?= (isset($isSubmit) && !isset($errors['terms'])) ? 'is-valid' : '' ?> <?= (isset($isSubmit) && isset($errors['terms'])) ? 'is-invalid' : '' ?>" type="checkbox" value="" id="terms"
                             required>
-                        <label class="form-check-label" for="terms">Agree to terms and conditions</label>
+                        <label class="form-check-label" for="terms">Conditions générales</label>
                     </div>
                     <div class="invalid-feedback mt-3 ml-0">
                     <?= $errors['terms'] ?? '' ?>.

@@ -212,13 +212,14 @@ include '../Views/header.php';
       <!-- Grid column -->
     </div>
     <!-- Grid row -->
-    <hr class="my-5">
+<!--    <hr class="my-5">-->
     <div class="row">
       <!-- Grid column -->
       <div class="col-lg-7">
         <!-- Category -->
         <!-- Post title -->
-        <h3 class="font-weight-bold mb-3 ml-5"><strong>Une suspension...aérienne !</strong></h3>
+        <h3 class="font-weight-bold mb-3 ml-5"><strong>Une suspension<br>
+        ...aérienne !</strong></h3>
         <!-- Excerpt -->
         <p class="ml-5">Notre coup de coeur cette semaine.</p>
         <!-- Read more button -->

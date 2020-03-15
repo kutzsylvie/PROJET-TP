@@ -38,25 +38,25 @@ h6 {
     margin: 0
 }
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 h2 {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
 }
 
 h3 {
-    font-size: 2rem;
+    font-size: 1.50rem;
 }
 
 h4 {
-    font-size: 1.75rem;
+    font-size: 1.25rem;
 }
 h5 {
-    font-size: 1.50rem;
+    font-size: 1rem;
 }
 h6 {
-    font-size:1rem;
+    font-size:0.5rem;
 }
 a,
 .btn {
@@ -96,11 +96,11 @@ header{
         padding-top:0px;
         padding-bottom:0px;
     }
-    /*     remove the padding from the nav-item and add some margin to give some breathing room on hovers
+    /*remove the padding from the nav-item and add some margin to give some breathing room on hovers*/
         .navbar .nav-item {
-            padding:.5rem .5rem;
+            padding: 0.5rem 0.5rem;
             margin:0 .25rem;
-        }*/
+        }
     /* makes the dropdown full width  */
     .navbar .dropdown {position:static;}
     .navbar .dropdown-menu {
@@ -125,6 +125,9 @@ header{
         border: 1px solid rgba(0,0,0,.15);
         background-color: #fff;
     }
+}
+.bonjour{
+color : #c7e1c8;
 }
 /*Banner*/
 .lbox-caption {
@@ -228,30 +231,7 @@ map-container{
     object-fit: cover;
     margin-left: 25%;
 }
-/*brands*/
-.cardbrand-img-top{
-    width: 100%;
-    height: 25vw;
-    object-fit: cover;
-    padding: 0 0 ;
-}
-.card-body{
-    padding: 0 0 ;
-}
-.zoom {
-height:400px;
-}
-.zoom p {
-text-align:center;
-}
-.zoom img {
-width:200px;
-height:267px;
-}
-.zoom img:hover {
-width:300px;
-height:400px;
-}
+
 /* DECO */
 .d-grid {
         display: grid;
@@ -284,7 +264,8 @@ height:400px;
         grid-row: 3 / 3;
       }
 
-      .item a {<ion: absolute;
+      .item a {
+        position: absolute;
         left: 0;
         right: 0;
         bottom: 0;
@@ -307,7 +288,6 @@ height:400px;
 }
 /* footer*/
 footer h4{
-font-size:1<frem;
   color: white;
   font-family: 'Poiret One', cursive;
 }

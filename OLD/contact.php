@@ -62,7 +62,7 @@
                                 <div class="invalid-feedback">
                                     <?= $errors['mail'] ?? '' ?>.
                                 </div>
-                                  </div>s               
+                                  </div>              
                                 <div class="col-md-4">
                                     <div
                                         class="form-group row no-gutters align-items-center text-danger font-weight-bold ml-5 mt-5">
