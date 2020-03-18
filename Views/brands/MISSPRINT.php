@@ -1,5 +1,5 @@
 <?php
-include '/header.php';
+include '../../Views/header.php';
 ?>
 <h1 class='text-center mt-5'>MissPrint</h1>
 <div class="row no-gutters">
@@ -22,5 +22,5 @@ Les papiers peints MissPrint sont sont réalisés avec des pigments organiques e
     </div>
 </div>
 <div class='border p-1 mt-5'>
-    <?php include 's/footer.php'; ?>
+    <?php include '../../Views/footer.php'; ?>
 </div>

@@ -1,5 +1,5 @@
 <?php
-include '/header.php';
+include '../../Views/header.php';
 ?>
 <h1 class='text-center mt-5'>Elitis</h1>
 <div class="row no-gutters">
@@ -29,5 +29,5 @@ En 2010, F&B prend une grande décision en abandonnant les formules à l’huile
     </div>
 </div>
 <div class='border p-1 mt-5'>
-    <?php include '/footer.php'; ?>
+    <?php include '../../Views/footer.php'; ?>
 </div>

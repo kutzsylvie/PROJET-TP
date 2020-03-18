@@ -15,19 +15,19 @@
                                     <div class="col-md-4">
                                         <ul class="nav flex-column">
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="brands/FARROW.php">FARROW & BALL</a>
+                                                <a class="nav-link active" href="../../Views/brands/FARROW.php">FARROW & BALL</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="brands/COLE & SON.php">Cole & Son</a>
+                                                <a class="nav-link" href="../../Views/brands/COLE & SON.php">Cole & Son</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="brands/MISSPRINT.php">MissPrint</a>
+                                                <a class="nav-link" href="../../Views/brands/MISSPRINT.php">MissPrint</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="brands/ELITIS.php">Elitis</a>
+                                                <a class="nav-link active" href="../../Views/brands/ELITIS.php">Elitis</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="brands/JAB ANSTOETZ.php">JAB ANSTOETZ</a>
+                                                <a class="nav-link" href="../../Views/brands/JAB ANSTOETZ.php">JAB ANSTOETZ</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -35,22 +35,22 @@
                                     <div class="col-md-4">
                                         <ul class="nav flex-column">
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="brands/FAT BOYS.php">FAT BOYS</a>
+                                                <a class="nav-link active" href="../../Views/brands/FAT BOYS.php">FAT BOYS</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="brands/WOODWICK.php">WOODWICK</a>
+                                                <a class="nav-link" href="../../Views/brands/WOODWICK.php">WOODWICK</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="brands/GEODESIS.php">GEODESIS</a>
+                                                <a class="nav-link" href="../../Views/brands/GEODESIS.php">GEODESIS</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="brands/SOPHIE JANIERE.php">SOPHIE JANIERE</a>
+                                                <a class="nav-link" href="../../Views/brands/SOPHIE JANIERE.php">SOPHIE JANIERE</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="brands/LIGHT & LIVING.php">Light&Living</a>
+                                                <a class="nav-link" href="../../Views/brands/LIGHT & LIVING.php">Light&Living</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="brands/EN FIL D'INDIENNE.php">en fil d'indienne</a>
+                                                <a class="nav-link" href="../../Views/brands/EN FIL D'INDIENNE.php">en fil d'indienne</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -68,29 +68,29 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="Actualites/deco.php">Conseil Déco</a>
+                        <a class="nav-link" href="../../Views/Actualités/deco.php">Conseil Déco</a>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="Actualites/produits.php" id="navbarDropdown" role="button">Produits</a>
+                        <a class="nav-link dropdown-toggle" href="../../Views/Actualites/produits.php" id="navbarDropdown" role="button">Produits</a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <div class="container w-100">
                                 <div class="row">
                                     <div class="col-md-4">
                                         <ul class="nav flex-column">
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="Actualites/bougies.php">Bougies</a>
+                                                <a class="nav-link active" href="../../Views/Actualites/bougies.php">Bougies</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="Actualites/luminaires.php">Luminaires</a>
+                                                <a class="nav-link" href="../../Actualites/luminaires.php">Luminaires</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="Actualites/textile.php">Textile</a>
+                                                <a class="nav-link" href="../../Actualites/textile.php">Textile</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="Actualites/mobilier.php">Mobilier</a>
+                                                <a class="nav-link" href="../../Actualites/mobilier.php">Mobilier</a>
                                             </li>
                                             <li class="nav-item">
-                                                <a class="nav-link" href="Actualites/decoration.php">Déco</a>
+                                                <a class="nav-link" href="../../Actualites/decoration.php">Déco</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -111,7 +111,7 @@
   <!--                             /.col-md-4  -->
                                     <div class="col-md-4">
                                         <a >
-                                            <img src="public/assets/img/Ambiances/AMBIANCE-MAGASIN.jpg" alt="" class="img-fluid">
+                                            <img src="../../public/assets/img/Ambiances/AMBIANCE-MAGASIN.jpg" alt="" class="img-fluid">
                                         </a>
                                         <p class="text-white">Short image call to action</p>
                                     </div>

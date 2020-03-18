@@ -1,5 +1,5 @@
 <?php
-require_once '../../PDO.php';
+require_once '../../config.php';
 include '../../Views/header.php';
 ?>
 <!-- se connecter à la base de données -->

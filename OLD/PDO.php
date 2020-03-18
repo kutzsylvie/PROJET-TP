@@ -1,5 +1,5 @@
 <?php
-require_once '/Config/config.php';
+require_once 'config.php';
 ?>
  <!-- Lier le fichier parameter.php à l'index.php -->
 <?php
