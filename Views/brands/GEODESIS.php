@@ -4,32 +4,38 @@ include '../../Views/header.php';
 <h1 class='text-center mt-5'>GEODESIS</h1>
 <div class="row no-gutters">
     <div class="card col-auto mx-auto mt-5" style="width:50rem;">
-        <img src="../sources/img/Ambiances/farrowpres.jpg" width="10px" class="cardbrand-img-top p-1" alt="image FARROW">
+        <img src="../../public/assets/img/MARQUES/geo12.jpg" width="100%" class="cardbrand-img-top p-1" alt="image FARROW">
         <div class="card-body text-center">
-            <h2 class="card-text">Peintures et papiers peints</h2>
-               Depuis 1946, Farrow & Ball, marque anglaise de peinture et papier-peint, utilise le même savoir-faire mêlant tradition et modernité afin d’obtenir une couleur d’une profondeur et d’une beauté unique.
+            <h2 class="card-text">BOUGIES PARFUMEES</h2>
+            <P>Des bougies parfumées fabriquées en Bretagne
 
-Les formules des peintures restent quasiment inchangées depuis la création de Farrow & Ball. La marque sélectionne les meilleurs ingrédients possibles et utilise une teneur élevée en pigment ce qui donne cette profondeur à ses couleurs.
+Nous sommes spécialisés dans la fabrication des bougies parfumées depuis plus de vingt ans et membre du syndicat des fabricants français de bougies. Nos bougies sont produites sur notre site de Vannes dans le Morbihan. Nous revendiquons un savoir-faire unique et artisanal. Nous pouvons garantir la qualité de nos bougies car elles sont fabriquées et contrôlées par nos soins. 
 
-Les papiers artisanaux sont peints avec les véritables peintures Farrow & Ball à base d’eau et à teneur minime en COV (Composés Organiques Volatils). Leurs procédés traditionnels de fabrication créent une apparence texturée unique qui accentue chaque détail du dessin.
+.
 
-La créativité n’a réellement aucune limite. Avec les peintures Farrow & Ball, laissez libre cours à votre imagination en peignant vous-même vos meubles ou en choisissant d’intensifier avec de la couleur vos boiseries intérieures et extérieures.
+Quels ingrédients dans nos bougies parfumées et diffuseurs de parfum ?
 
-Vous pourrez personnaliser votre décoration en introduisant des touches de vos teintes préférées.
+Historiquement, nos bougies étaient constituées d’un mélange de cires minérales et végétales de très haute qualité provenant exclusivement de l’Union Européenne. Depuis septembre 2018, nous proposons également une collection Nature, dont la cire est composée d'huiles de noix de coco et noyau d'abricot.
+
+Le succès de notre marque repose sur la qualité, la durée et la puissance de diffusion de nos bougies.
+
+En termes de santé, il est important de rappeler qu'une récente étude menée par l’ADEME (Etablissement public rattaché au Ministère de l’Ecologie) a conclu qu’une utilisation normale de bougies parfumées est sans risque pour la santé, que celles-ci soient composées de cires végétales et/ou de cires minérales.
+
+Nos produits ne contiennent pas de substances d'origine animale et aucun produit n'est testé sur les animaux, cette pratique étant de toute façon interdite en France. 
+
+.
+
+Et les parfums ?
+
+Nos parfums sont fabriqués en France et en Espagne. Ils sont en conformité avec les recommandations de l’IFRA (International Fragrance association) en matière de bonnes pratiques de fabrication.
+
+Les éventuels sensibilisants qu’ils peuvent contenir sont listés sur nos packagings conformément à la réglementation CLP en vigueur dans l’Union Européenne. Ces sensibilisants sont d’ailleurs souvent présents dans les matières premières naturelles qui entrent dans la composition de nos parfums.
+
+Nos mèches sont en coton et leur armature en métal ne contient pas de plomb (celui-ci est interdit depuis près de 10 ans au sein de l’U.E.)
             </p>
-             <img src="../sources/img/Ambiances/farrowpres2.jpg" width="10px" class="cardbrand-img-top p-1" alt="image FARROW">
-
-            <p>C’est dans le Dorset que tout a commencé avec John Farrow et Richard Ball, deux pionniers locaux. En 1946, ils font connaissance alors qu’ils travaillent tous les deux dans la même carrière d’argile.
-
-Puis c’est à Verwood, toujours dans la région du Dorset, que leur première usine voit le jour, ainsi que leurs premiers gros contrat (Ford Motor Company, Armirauté, Raleigh Bicycles). Après un gigantesque incendie qui ravagea leur usine, ils déménagèrent dans le Wimborne, qui est toujours le lieu de fabrication de la peinture et du papier peint.
-
-Malgré une concurrence forte dans les années 70 et 80, avec l’arrivée des peintures acryliques contenant moins de pigments et plus de plastique, Farrow & Ball conserve son identité : des recettes originales et des méthodes ancestrales.
-
-Les années 90 s’inscrivent dans une ère de renouveau pour la marque F&B. En effet, avec l’arrivée de Tom Helme et Martin Ephson, travaillant respectivement dans les domaines de la décoration et de la finance, F&B innove : fabrication des premiers papiers peints, ouverture du premier showroom à Fulham, puis successivement Toronto, Paris, New York et la création du site internet.
-
-En 2010, F&B prend une grande décision en abandonnant les formules à l’huile, pour une refonte totale des gammes à base d’eau, ayant une faible teneur en COV. Par ailleurs, les pots de peintures deviennent recyclables et le papier utilisé pour les papiers peints provient de forêts gérées de manière responsable.</p>
-        <img src="../sources/img/Ambiances/farrowpressand.jpg" width="10px" class="cardbrand-img-top p-1" alt="image FARROW">
-                                <a href=https://www.farrow-ball.com/paint-colours" target=_blank class="btn btn-primary mt-5">Visiter le site de FARROW&BALL&raquo;</a>
+             <img src="../../public/assets/img/MARQUES/geo1.jpg" width="100%" class="cardbrand-img-top p-1" alt="image FARROW">
+        <img src="../../public/assets/img/MARQUES/geo3.jpg" width="100%" class="cardbrand-img-top p-1" alt="image FARROW">
+                                <a href="https://www.geodesis.com/fr/" target=_blank class="btn btn-primary mt-5">Visiter le site de GEODESIS &raquo;</a>
         </div>
     </div>
 </div>

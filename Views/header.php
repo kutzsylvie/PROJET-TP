@@ -20,9 +20,7 @@
         <div class="container-fluid p-0 mt-2">
             <header class=" sticky-top data-spy=scroll id= home data-target= #navbar-wd  data-offset= 98">
                 <div>
-                    
-                    <div>
                         <?php include 'nav.php' ?>
-                    </div>
                 </div>
-            </header>
+        </div>
+    </header>

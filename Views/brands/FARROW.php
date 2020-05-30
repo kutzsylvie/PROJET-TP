@@ -4,7 +4,7 @@ include '../../Views/header.php';
 <h1 class='text-center mt-5'>FARROW & BALL</h1>
 <div class="row no-gutters">
     <div class="card col-auto mx-auto mt-5" style="width:50rem;">
-        <img  src="../sources/img/MARQUES/green-smoke-top-image.jpg" width="100px" class="cardbrand-img-top p-1" alt="image FARROW">
+        <img  src="../../public/assets/img/MARQUES/green-smoke-top-image.jpg" width="100%" class="cardbrand-img-top p-1" alt="image FARROW">
         <div class="card-body text-center">
             <h2 class="card-text">Peintures et papiers peints</h2>
             Depuis 1946, Farrow & Ball, marque anglaise de peinture et papier-peint, utilise le même savoir-faire mêlant tradition et modernité afin d’obtenir une couleur d’une profondeur et d’une beauté unique.
@@ -17,7 +17,7 @@ include '../../Views/header.php';
 
             Vous pourrez personnaliser votre décoration en introduisant des touches de vos teintes préférées.
             </p>
-            <img src="../sources/img/MARQUES/5-hegemone-bp5705.jpg" width="10px" class="cardbrand-img-top p-1" alt="image FARROW">
+            <img src="../../public/assets/img/MARQUES/5-hegemone-bp5705.jpg" width="100%" class="cardbrand-img-top p-1" alt="image FARROW">
 
             <p>C’est dans le Dorset que tout a commencé avec John Farrow et Richard Ball, deux pionniers locaux. En 1946, ils font connaissance alors qu’ils travaillent tous les deux dans la même carrière d’argile.
 
@@ -28,8 +28,8 @@ include '../../Views/header.php';
                 Les années 90 s’inscrivent dans une ère de renouveau pour la marque F&B. En effet, avec l’arrivée de Tom Helme et Martin Ephson, travaillant respectivement dans les domaines de la décoration et de la finance, F&B innove : fabrication des premiers papiers peints, ouverture du premier showroom à Fulham, puis successivement Toronto, Paris, New York et la création du site internet.
 
                 En 2010, F&B prend une grande décision en abandonnant les formules à l’huile, pour une refonte totale des gammes à base d’eau, ayant une faible teneur en COV. Par ailleurs, les pots de peintures deviennent recyclables et le papier utilisé pour les papiers peints provient de forêts gérées de manière responsable.</p>
-            <img src="../sources/img/MARQUES/farrowroom.jpg" width="10px" class="cardbrand-img-top p-1" alt="image FARROW">
-            <a href="https://www.farrow-ball.com" target=_blank class="btn btn-primary mt-5">Visiter le site de FARROW&BALL&raquo;</a>
+            <img src="../../public/assets/img/MARQUES/farrowroom.jpg" width="100%" class="cardbrand-img-top p-1" alt="image FARROW">
+            <a href="https://www.farrow-ball.com" target=_blank class="btn btn-primary mt-5">Visiter le site de FARROW & BALL &raquo;</a>
         </div>
     </div>
 </div>

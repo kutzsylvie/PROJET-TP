@@ -9,7 +9,7 @@ include '../../Views/header.php';
     <!-- Section heading -->
     <h3 class="font-weight-bold mb-4 pb-2">Les bougies</h3>
     <!-- Section description -->
-    <p class="grey-text w-responsive mx-auto mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit fugit, error amet numquam iure provident voluptate esse quasi nostrum quisquam eum porro a pariatur veniam.</p>
+    <p class="grey-text w-responsive mx-auto mb-5">La bougie du mois.</p>
 
   	<!-- Grid row -->
     <div class="row">

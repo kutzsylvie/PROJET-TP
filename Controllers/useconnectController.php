@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
                     // controle du mot de passe, si ok, on charge le profil
                     if (password_verify($password, $user->password)) {
                         $_SESSION['auth']['login'] = true;
-                        $_SESSION['auth']['id'] = $user->id;
+                        $_SESSION['auth']['idUsers'] = $user->idUsers;
                         $_SESSION['auth']['lastname'] = $user->lastname;
                         $_SESSION['auth']['firstname'] = $user->firstname;
                         header('Location:../Views/index.php');

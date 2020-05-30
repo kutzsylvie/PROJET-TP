@@ -3,7 +3,7 @@ session_start();
 require_once  '../Models/Database.php';
 require_once '../Models/User.php';
 // registration checker
- $lastname =$firstname = $email  = $phone = $password = $id_role = '';
+ $lastname = $firstname = $email  = $phone = $password = $id_role = '';
 $errors = [];
 $nameRegex = '/\w+/';
 $passwordRegex = '/^(?=.*[\d])(?=.*[A-Z])(?=.*[a-z])(?=.*[!@#$%^&*])?[\w!@#$%^&*]{8,}$/';
@@ -39,7 +39,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     // if (empty($birthdate) || !preg_match($nameRegex, $lastname)) {
     //     $errors['birthdate'] = 'La date de naissance est invalide !';
     // }
-    //verif champ date mail
+    //verif champ mail
     $email = trim(filter_input(INPUT_POST, 'email', FILTER_SANITIZE_STRING));
     if (empty($email) || !filter_input(INPUT_POST, 'email', FILTER_VALIDATE_EMAIL)) {
         $errors['email'] = 'Le mail est invalide !';

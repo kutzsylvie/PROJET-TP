@@ -35,7 +35,7 @@
                                     <div class="col-md-4">
                                         <ul class="nav flex-column">
                                             <li class="nav-item">
-                                                <a class="nav-link active" href="../../Views/brands/FAT BOYS.php">FAT BOYS</a>
+                                                <a class="nav-link active" href="../../Views/brands/FATBOY.php">FATBOY</a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link" href="../../Views/brands/WOODWICK.php">WOODWICK</a>
@@ -57,7 +57,7 @@
                                     <!--                             /.col-md-4  -->
                                     <div class="col-md-4">
                                         <a>
-                                            <img src="public/assets/img/Ambiances/farrowpres.jpg" alt="presentoir farrow" class="img-fluid">
+                                            <img src="../../public/assets/img/Ambiances/farrowpres.jpg" alt="presentoir farrow" class="img-fluid">
                                         </a>
                                         <p class="text-white">Visitez les pages de nos partenaires.</p>
                                     </div>
@@ -68,7 +68,7 @@
                         </div>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../../Views/Actualités/deco.php">Conseil Déco</a>
+                        <a class="nav-link" href="../../Views/Actualites/conseildeco.php">Conseil Déco</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="../../Views/Actualites/produits.php" id="navbarDropdown" role="button">Produits</a>
@@ -113,7 +113,7 @@
                                         <a >
                                             <img src="../../public/assets/img/Ambiances/AMBIANCE-MAGASIN.jpg" alt="" class="img-fluid">
                                         </a>
-                                        <p class="text-white">Short image call to action</p>
+                                        <!-- <p class="text-white">Short image call to action</p> -->
                                     </div>
   <!--                             /.col-md-4  -->
                                 </div>
@@ -123,25 +123,21 @@
                     </li>
                     <div>
                     <li class="nav-item">
-                        <a class="nav-link" href="register.php">Contact</a>
+                        <a class="nav-link" href="../../Views/register.php">Contact</a>
                     </li>
             </div>
             <form class="form-inline">
              <?php if (!isset($_SESSION['auth']['login'])) { ?>
-                <a class="btn btn-danger mr-2" href="../Controllers/useconnectController.php" title="connectes-toi !">
-                    <i class="fa fa-user" aria-hidden="true"></i> Connectes-toi !</a>
+                <a class="btn btn-secondary mr-2" href="../Controllers/useconnectController.php" title="connectes-toi !">
+                    <i class="fa fa-user" aria-hidden="true"></i> Mon compte</a>
             <?php } else { ?>
                 <a  href="../Controllers/profilController.php" class="btn btn-secondary bonjour text-white font-weight-bold display-4 mr-1">Bonjour <?= ucfirst(strip_tags($_SESSION['auth']['lastname'])) ?> </a>
                 <a href="../Controllers/logoutController.php" class="btn btn-secondary mr-1"><i class="fas fa-sign-out-alt">Déconnexion</i></a>
             <?php } ?>
-	                     <input class="form-control ml-5-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
+	                     <input class="form-control search ml-5-sm-2" type="search" placeholder="Rechercher" aria-label="Search">
                              <div>
-	                     <button class="btn btn-outline-secondary ml-2" type="submit">Valider</button>
+	                     <button class="btn  btn-search btn-outline-secondary text-white font-weight-bold ml-2" type="submit">Valider</button>
                              </div>
 	                  </form>
-            </div>
-            <div>
-             
-            </div>
             </div>
         </nav>

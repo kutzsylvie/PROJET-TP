@@ -11,7 +11,7 @@ class User {
    *
    * @var type integer
    */
-    public $id;
+    public $idUsers;
     /**
      *
      * @var type string
@@ -76,15 +76,15 @@ class User {
     }
 // view profil data
     public function getOne() {
-        $sql = 'SELECT `id`,`lastname`,`firstname`,`email`,`phone`,`password`,`message`,`newsletter`, `id_role` FROM `users` WHERE `id` = :id OR `email` = :email';
+        $sql = 'SELECT `idUsers`,`lastname`,`firstname`,`email`,`phone`,`password`,`message`,`newsletter`, `id_role` FROM `users` WHERE `id` = :id OR `email` = :email';
         $req = $this->db->prepare($sql);
-        $req->bindValue(':id', $this->id, PDO::PARAM_INT);
+        $req->bindValue(':idUsers', $this->idUsers, PDO::PARAM_INT);
         $req->bindValue(':email', $this->email, PDO::PARAM_STR);
 
 
         if ($req->execute()) {
             $user = $req->fetch(PDO::FETCH_OBJ);
-            $this->id = $user->id;
+            $this->idUsers = $user->idUsers;
             $this->lastname = $user->lastname;
             $this->firstname = $user->firstname;
             $this->email = $user->email;
@@ -98,7 +98,7 @@ class User {
     }
 
     public function checkEmail() {
-        $sql = 'SELECT COUNT(`id`) AS number_user FROM `users` WHERE `email` = :email';
+        $sql = 'SELECT COUNT(`idUsers`) AS number_user FROM `users` WHERE `email` = :email';
         $req = $this->db->prepare($sql);
         $req->bindValue(':email', $this->email, PDO::PARAM_STR);
         $exist_user = false;
@@ -127,7 +127,7 @@ class User {
     }
 // delete profil data
 public function delete() {
-    $sql = 'DELETE FROM users WHERE id = :id';
+    $sql = 'DELETE FROM users WHERE id = :idUsers';
     $sth = $this->db->prepare($sql);
     $sth->bindValue(':id', $this->id, PDO::PARAM_INT);
     if ($sth->execute()) {

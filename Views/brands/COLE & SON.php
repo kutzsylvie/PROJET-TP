@@ -4,7 +4,7 @@ include '../../Views/header.php';
 <h1 class='text-center mt-5'>Cole & Son</h1>
 <div class="row no-gutters">
     <div class="card col-auto mx-auto mt-5" style="width:50rem;">
-        <img src="../public/img/MARQUES/colebotanica.jpg" width="10px" class="cardbrand-img-top p-1" alt="image COLE & SON">
+        <img src="../../public/assets/img/MARQUES/colebotanica.jpg" width="10px" class="cardbrand-img-top p-1" alt="image COLE & SON">
         <div class="card-body text-center">
 <!--            <h1 class="card-title">Cole & Son</h1>-->
             <h2 class="card-text">Papiers peints</h2>
@@ -12,14 +12,14 @@ include '../../Views/header.php';
                 Des papiers graphiques riches de détails, un choix délicat de couleurs et de teintes vives ou rabattues,
                 confèrent aux motifs floraux, de jungle ou géométriques incontournables de Contemporary Restyled raffinement et modernité.</p>
             <div>
-                <img src="../sources/img/MARQUES//collefort.jpg" width="10px" class="cardbrand-img-top p-1" alt="image FARROW">
+                <img src="../../public/assets/img/MARQUES/collefort.jpg" width="100%" class="cardbrand-img-top p-1" alt="image cole & son">
             </div>
             <p>Venez découvrir : Hick’s Hexagone, Palm jungle, Rajapur, Woods & Pears, Summer Lily...</p>
             <div>
-            <img src="../sources/img/MARQUES/collelivre.jpg" width="10px" class="cardbrand-img-top p-1" alt="image FARROW">
+            <img src="../../public/assets/img/MARQUES/collelivre.jpg" width="100%" class="cardbrand-img-top p-1" alt="image cole & son">
             </div>
             <div>
-            <a href="https://www.cole-and-son.com/en/" target=_blank class="btn btn-primary mt-5">Visiter le site de Cole & SOn&raquo;</a>
+            <a href="https://www.cole-and-son.com/en/" target=_blank class="btn btn-primary mt-5">Visiter le site de Cole & SOn &raquo;</a>
             </div>
         </div>
     </div>

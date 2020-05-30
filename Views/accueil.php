@@ -79,10 +79,9 @@ include '../Views/header.php';
             <p>La boutique est ouverte du mardi au samedi<br>
               de 9h à 12h et 14h à 19h.</p>
           </div>
-          <div class="col-md-6 mb-4 mb-md-0">
             <!--Image-->
             <div class="view overlay z-depth-1-half">
-              <div id="map-container-google-1" class="z-depth-1-half map-container" style="height: 500px">
+              <div id="map-container-google-1" class="z-depth-1-half map-container h-100 w-100">
                 <iframe class="map"
                   src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1281.0338867079674!2d1.4179979761240702!3d50.04756169483021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47de005ec96eaaab%3A0x7ce7ee65fc69ab8a!2s31%20Rue%20Paul%20Bignon%2C%2076260%20Eu!5e0!3m2!1sfr!2sfr!4v1582207503532!5m2!1sfr!2sfr"
                   frameborder="0" style="border:0;" allowfullscreen=""></iframe>
@@ -92,7 +91,6 @@ include '../Views/header.php';
               </a>
             </div>
           </div>
-        </div>
     </div>
 </div>
 </section>
